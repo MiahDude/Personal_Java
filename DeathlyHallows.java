@@ -1,3 +1,12 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac DeathlyHallows.java
+ *  Execution:    java DeathlyHallows
+ *
+ *  Prints asterisks to form an n x 2*n-1 Deathly Hallows symbol, where n is a positive, odd integer.
+ *
+ ************************************************************************************************************/
+
 import java.util.Scanner;
 
 public class DeathlyHallows 

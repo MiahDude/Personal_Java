@@ -7,8 +7,7 @@
  *  Changes were made so that more elaborate rose curves could be generated, 
  *  based on information found here: https://en.wikipedia.org/wiki/Rose_(mathematics).
  *
- *  Plots rose curves, r = cos(k*theta), where k = n/d.
- *  n,d are doubles input by the user
+ *  Plots rose curves, r = cos(k*theta), where k = n/d, and n,d are doubles.
  *
  ************************************************************************************************************/
 

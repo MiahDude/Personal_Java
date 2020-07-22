@@ -1,3 +1,12 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac Genome.java
+ *  Execution:    java Genome
+ *
+ *  An incomplete implementation of a genome data type.
+ *
+ ************************************************************************************************************/
+
 public class Genome
 {
 	private String gene;

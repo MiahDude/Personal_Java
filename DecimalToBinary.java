@@ -1,3 +1,12 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac DecimalToBinary.java
+ *  Execution:    java DecimalToBinary n
+ *
+ *  Converts a decimal integer n to its binary representation.
+ *
+ ************************************************************************************************************/
+
 import java.util.Stack;
 
 public class DecimalToBinary

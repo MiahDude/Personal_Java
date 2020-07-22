@@ -1,3 +1,13 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac Matrix.java
+ *  Execution:    java Matrix a b c d
+ *
+ *  An incomplete implementation of a Matrix data type. 
+ *  a,b,c,d are integers used to form a 2 x 2 integer matrix.
+ *
+ ************************************************************************************************************/
+
 import java.util.Arrays;
 
 public class Matrix

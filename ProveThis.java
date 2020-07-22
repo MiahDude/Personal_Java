@@ -1,4 +1,11 @@
-// This program was written to help me prove a conjecture for an Abstract Algebra homework assignment
+/************************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac ProveThis.java
+ *  Execution:    java ProveThis
+ *
+ *  This program was written to help me prove or disprove a conjecture for an Abstract Algebra homework assignment.
+ *
+ ************************************************************************************************************************/
 public class ProveThis
 {
 	public static void main(String[] args)

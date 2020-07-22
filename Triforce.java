@@ -1,3 +1,12 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac Triforce.java
+ *  Execution:    java Triforce
+ *
+ *  Prints asterisks to form an n x 2*n-1 Triforce, where n is a positive, odd integer.
+ *
+ ************************************************************************************************************/
+
 import java.util.Scanner;
 
 public class Triforce 

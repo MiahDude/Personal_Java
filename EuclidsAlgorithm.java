@@ -1,3 +1,12 @@
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac EuclidsAlgorithm.java
+ *  Execution:    java EuclidsAlgorithm m n
+ *
+ *  Implementation of Euclids Algorithm to compute gcd(m,n).
+ *
+ ************************************************************************************************************/
+
 public class EuclidsAlgorithm
 {
 	public static int euclid(int m, int n)

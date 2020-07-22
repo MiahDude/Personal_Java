@@ -1,4 +1,12 @@
-// This program was written to make my Calc II homework easier
+/************************************************************************************************************
+ *  Author: Jeremiah Herr
+ *  Compilation:  javac NumIntegration.java
+ *  Execution:    java NumIntegration
+ *  Dependencies: 
+ *
+ *  This program was written to make my Calc II homework easier.
+ *
+ ************************************************************************************************************/
 public class NumIntegration
 {
 	public static double x(double k, double a, double dx)
@@ -72,10 +80,10 @@ public class NumIntegration
 
 		System.out.println("Midpoint Rule: " + midpoint(a,b,n));
 		System.out.println("Trapezoid Rule: " + trapezoid(a,b,n));
-		//System.out.println("Simpson Rule: " + simpsontrap2(a,b,n/2));
+		System.out.println("Simpson Rule: " + simpsontrap2(a,b,n/2));
 
 		System.out.println("Absolute Error in Midpoint: " + abs_error(midpoint(a,b,n),c));
 		System.out.println("Absolute Error in Trapezoid: " + abs_error(trapezoid(a,b,n),c));
-		//System.out.println("Absolute Error in Simpson: " + abs_error(simpsontrap2(a,b,n/2),c));
+		System.out.println("Absolute Error in Simpson: " + abs_error(simpsontrap2(a,b,n/2),c));
 	}
 }
