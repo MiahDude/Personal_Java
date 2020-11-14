@@ -3,7 +3,10 @@
  *  Compilation:  javac CardMachine.java
  *  Execution:    java CardMachine n
  *
- *  Simulates a card machine from an example math problem.
+ *  Simulates a card machine from a math problem we studied my Math Senior Seminar class.
+ *
+ *  I wrote this program in my own time since I was able to see that the card machine (as described in the problem) 
+ *  and the solutions could quickly and easily be implemented as a computer program.
  *
  *  A card machine takes in a deck of n cards as input, where n is some positive integer, and each card has 
  *  a unique integer printed on it between 1 and n (inclusive). The machine is able to perform an operation
