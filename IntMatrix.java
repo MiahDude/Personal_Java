@@ -1,29 +1,29 @@
 /************************************************************************************************************
  *  Author: Jeremiah Herr
- *  Compilation:  javac Matrix.java
- *  Execution:    java Matrix a b c d
+ *  Compilation:  javac IntMatrix.java
+ *  Execution:    java IntMatrix a b c d
  *
- *  An incomplete implementation of a Matrix data type. 
+ *  An incopmlete implementation of an Integer Matrix data type. 
  *  a,b,c,d are integers used to form a 2 x 2 integer matrix.
  *
  ************************************************************************************************************/
 
 import java.util.Arrays;
 
-public class Matrix
+public class IntMatrix
 {
 	private int[][] matrix;
 	private int rnum; // number of rows
 	private int cnum; // number of columns
 
-	public Matrix(int[][] matrix)
+	public IntMatrix(int[][] matrix)
 	{
 		this.matrix = matrix;
 		rnum = matrix.length;
 		cnum = matrix[0].length;
 	}
 
-	public Matrix(int i, int j)
+	public IntMatrix(int i, int j)
 	{
 		matrix = new int[i][j];
 		rnum = matrix.length;
@@ -55,7 +55,7 @@ public class Matrix
 		return Arrays.deepToString(matrix);
 	}
 
-	public static Matrix multiply(Matrix A, Matrix B)
+	public static IntMatrix multiply(Matrix A, Matrix B)
 	{
 		int m = A.getRNum();
 		int n = A.getCNum();
@@ -77,11 +77,11 @@ public class Matrix
 				}
 			}
 		}
-		Matrix finalProduct = new Matrix(C);
+		IntMatrix finalProduct = new Matrix(C);
 		return finalProduct;
 	}
 
-	public static Matrix multiply(Matrix A, Matrix B, int z) // (A*B)modz
+	public static IntMatrix multiply(IntMatrix A, IntMatrix B, int z) // (A*B)modz
 	{
 		int m = A.getRNum();
 		int n = A.getCNum();
@@ -103,11 +103,11 @@ public class Matrix
 				}
 			}
 		}
-		Matrix finalProduct = new Matrix(C);
+		IntMatrix finalProduct = new IntMatrix(C);
 		return finalProduct;
 	}
 
-	public Matrix inverse(int z) // only works for 2x2 matrices
+	public IntMatrix inverse(int z) // only works for 2x2 matrices
 	{
 		int[][] inv = new int[2][2]; 
 		int x, y, p, q;
@@ -157,11 +157,11 @@ public class Matrix
 				} 
 			}
 		}
-		Matrix inverse = new Matrix(inv);
+		IntMatrix inverse = new IntMatrix(inv);
 		return inverse;
 	}
 
-	public Matrix identity(int z)
+	public IntMatrix identity(int z)
 	{
 		Matrix inverse = this.inverse(z);
 		Matrix identity = Matrix.multiply(this,inverse,z);
@@ -176,9 +176,9 @@ public class Matrix
 		array[1][0] = Integer.parseInt(args[2]);
 		array[1][1] = Integer.parseInt(args[3]);
 		int z = Integer.parseInt(args[4]);
-		Matrix mat = new Matrix(array);
-		Matrix matInv = mat.inverse(z);
-		Matrix matId = mat.identity(z);
+		IntMatrix mat = new IntMatrix(array);
+		IntMatrix matInv = mat.inverse(z);
+		IntMatrix matId = mat.identity(z);
 		System.out.println(mat);
 		System.out.println(matInv);
 		System.out.println(matId);
