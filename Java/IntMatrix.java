@@ -1,10 +1,11 @@
 /************************************************************************************************************
  *  Author: Jeremiah Herr
  *  Compilation:  javac IntMatrix.java
- *  Execution:    java IntMatrix a b c d
+ *  Execution:    java IntMatrix a b c d z
  *
  *  An incopmlete implementation of an Integer Matrix data type. 
- *  a,b,c,d are integers used to form a 2 x 2 integer matrix.
+ *  a,b,c,d are integers used to form a 2 x 2 integer matrix, 
+ *  and z is an integer specifying arithmetic modulo z
  *
  ************************************************************************************************************/
 
@@ -77,7 +78,7 @@ public class IntMatrix
 				}
 			}
 		}
-		IntMatrix finalProduct = new Matrix(C);
+		IntMatrix finalProduct = new IntMatrix(C);
 		return finalProduct;
 	}
 
@@ -123,12 +124,12 @@ public class IntMatrix
 			inv[0][1] = -b;
 			inv[1][0] = -c;
 			inv[1][1] = a;
-			Matrix inverse = new Matrix(inv);
+			IntMatrix inverse = new IntMatrix(inv);
 			return inverse; 
 		}
 		else if ((a*d - c*b)%z == 0) // then the inverse does not exist
 		{
-			Matrix inverse = new Matrix(inv);
+			IntMatrix inverse = new IntMatrix(inv);
 			return inverse;
 		}
 
@@ -163,8 +164,8 @@ public class IntMatrix
 
 	public IntMatrix identity(int z)
 	{
-		Matrix inverse = this.inverse(z);
-		Matrix identity = Matrix.multiply(this,inverse,z);
+		IntMatrix inverse = this.inverse(z);
+		IntMatrix identity = IntMatrix.multiply(this,inverse,z);
 		return identity;
 	}
 
