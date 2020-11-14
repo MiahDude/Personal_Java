@@ -4,7 +4,6 @@
 # Execution: py TempConverter.py
 # 
 # Converts input temperatures between Fahrenheit and Celsius
-# This was my first attempt at writing a program to teach myself Python
 #
 #************************************************************************
 
