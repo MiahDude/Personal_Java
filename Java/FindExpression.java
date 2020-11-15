@@ -3,7 +3,7 @@
  *  Compilation:  javac FindExpression.java
  *  Execution:    java FindExpression
  *
- *  Determines whether a set of Strings in an input text file are valid expressions according to 
+ *  Determines whether a set of Strings in an input text file (express.txt) are valid expressions according to 
  *  a predefined grammar. The following are examples of valid expressions in this grammar: A, a, (a+b), (A*(d+c))
  *
  ************************************************************************************************************/
